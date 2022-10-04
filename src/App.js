@@ -21,9 +21,7 @@ function App() {
         <Route exact path ='/products'>
           <ProductsPage />
         </Route>
-        <Route exact path='/products/:id'>
-          <SingleProduct/>
-          </Route>
+        <Route exact path='/products/:id' children={<SingleProduct />} />
         <Route exact path ='/checkout'>
           <Checkout />
         </Route>
